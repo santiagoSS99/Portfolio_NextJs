@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
-import Projects from "./Projects/page";
-import { Ball } from "@/components/Button";
+import { Button } from "@/components/Button";
+import Hero from "@/components/Hero";
+import React from "react";
 
 export default function Home() {
   return (
-    <>
-      <Navbar/>
-      <Ball/>
-    </>
+    <React.Fragment>
+      <Hero/>
+    </React.Fragment>
   );
 }

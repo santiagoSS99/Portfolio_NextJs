@@ -1,22 +1,11 @@
-// import { motion } from "framer-motion"
-
-// const MyComponent = () => (
-//   <motion.button
-//     whileHover={{ scale: 1.1 }}
-//     whileTap={{ scale: 0.9 }}
-//   />
-// )
-
-// export default MyComponent
-
 "use client"
 
 import { AnimatePresence, motion } from "framer-motion";
 
-export const Ball = () => (
+export const Button = () => (
   <AnimatePresence>
-    <motion.div>
+    <motion.button>
       hello
-    </motion.div>
+    </motion.button>
   </AnimatePresence>
 );
