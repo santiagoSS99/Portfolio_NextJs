@@ -2,10 +2,12 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 
-export const Button = () => (
+const Button = (buttonName: string) => (
   <AnimatePresence>
     <motion.button>
-      hello
+      {buttonName}
     </motion.button>
   </AnimatePresence>
 );
+
+export default Button

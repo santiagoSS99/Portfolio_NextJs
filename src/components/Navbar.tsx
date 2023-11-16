@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <article className="flex sticky items-center justify-center">
+      <div className="flex sticky items-center justify-center">
         <nav className="fixed flex w-[98%] h-24 shadow-xl rounded-xl justify-between top-2 items-center px-4 backdrop-blur bg-softwhite">
           <section>
             <Link href={"/"}>
@@ -84,7 +84,7 @@ const Navbar = () => {
             </section>
           </section>
         </nav>
-      </article>
+      </div>
     </>
   );
 };
