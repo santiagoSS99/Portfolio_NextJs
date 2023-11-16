@@ -3,6 +3,8 @@
 import React from "react";
 import "../app/global.css";
 import { motion } from "framer-motion";
+import { Button } from "@/components/Button";
+// import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -32,8 +34,18 @@ const Hero = () => {
           team collaborator. Excited to take on new challenges in web
           development.
         </h1>
+      <div className="absolute  mt-8 m-6 ">
+        <button className="p-3 bg-slate-50 mx-2">
+            Button 1
+        </button>
+        <button className="p-3 bg-slate-50 mx-2">
+            Button 2
+        </button>
+        <button className="p-3 bg-slate-50 mx-2">
+            Button 3
+        </button>
       </div>
-      <div></div>
+      </div>
     </section>
   );
 };
