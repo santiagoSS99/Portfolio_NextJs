@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section
-      className="flex items-center bg-hero justify-center h-screen bg-fixed bg-cover bg-white dark:bg-slate-800 ring-1 ring-slate-900/5 shadow-xl z-50"
+      className="flex items-center bg-hero justify-center h-screen bg-cover bg-white dark:bg-slate-800 ring-1 ring-slate-900/5 shadow-xl z-50"
     >
       <div />
-      <div className="fixed w-[80%] shadow-xl rounded-xl items-center backdrop-blur bg-softwhite">
+      <div className="fixed w-[80%] -mt-36 shadow-xl rounded-xl items-center backdrop-blur bg-softwhite">
         <motion.h2
           whileHover={{ scale: 1.2 }}
           transition={{ ease: "easeOut" }}
@@ -18,10 +18,10 @@ const Hero = () => {
         >
           Santiago Sanchez
         </motion.h2>
-        <p className="text-slate-50 dark:text-white mt-2 text-sm flex justify-center">
+        <p className="text-slate-900 dark:text-white mt-2 text-sm flex justify-center">
           About Me
         </p>
-        <h1 className="text-slate-50 dark:text-white mt-2 text-sm p-3 border-spacing-0 m-10">
+        <h1 className="text-slate-900 dark:text-white mt-2 text-sm p-3 border-spacing-0 m-10">
           I am a Systems Engineer with over 1 year of experience in web
           development, focusing on technologies like Javascript, Typescript,
           Angular, and Node.js. Passionate about self-directed learning and
