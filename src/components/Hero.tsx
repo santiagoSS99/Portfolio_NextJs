@@ -10,7 +10,7 @@ const Hero = () => {
       className="flex items-center bg-hero justify-center h-screen bg-cover bg-white dark:bg-slate-800 ring-1 ring-slate-900/5 shadow-xl z-50"
     >
       <div />
-      <div className="fixed w-[80%] shadow-xl rounded-xl items-center backdrop-blur bg-softwhite">
+      <div className="fixed max-sm:mt-16 w-[80%] shadow-xl rounded-xl items-center backdrop-blur bg-softwhite">
       {/* <div className="fixed w-[80%] -mt-36 sm:-mt-24 shadow-xl rounded-xl items-center backdrop-blur bg-softwhite"> */}
         <motion.h2
           whileHover={{ scale: 1.2 }}
