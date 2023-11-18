@@ -41,7 +41,7 @@ const Hero = () => {
             <h1 className="text-2xl uppercase font-bold	">Skills</h1>
           </section>
           <hr className="mt-6" />
-          <section className="flex mt-6 top">
+          <section className="flex mt-6 top flex-wrap justify-center">
             <IoLogoJavascript size={25} style={{ margin: "20px" }} />
             <SiTypescript size={25} style={{ margin: "20px" }} />
             <SiAngular size={25} style={{ margin: "20px" }} />
