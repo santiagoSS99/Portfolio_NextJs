@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "./Button";
 
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript, SiAngular  } from "react-icons/si";
+import { SiTypescript, SiAngular } from "react-icons/si";
 import { PiAngularLogoFill } from "react-icons/pi";
 
 const Hero = () => {
@@ -26,15 +26,14 @@ const Hero = () => {
           </p>
           <h1 className="text-slate-900 dark:text-slate-900 mt-2 text-sm p-3 m-10 max-sm:my-3">
             am a Systems Engineer with over a year of dedicated experience in
-            web development, specializing in technologies such as
-            Typescript, Angular, NextJs, and Node.js. I possess a great
-            dedication to self-directed learning, constantly pursuing avenues
-            for professional advancement. My commitment lies in crafting
-            innovative, top-tier web solutions while upholding stringent
-            standards of performance and security. Proficient in effective
-            communication and adept at collaborative teamwork, I am enthusiastic
-            about embracing fresh challenges within the realm of web
-            development.
+            web development, specializing in technologies such as Typescript,
+            Angular, NextJs, and Node.js. I possess a great dedication to
+            self-directed learning, constantly pursuing avenues for professional
+            advancement. My commitment lies in crafting innovative, top-tier web
+            solutions while upholding stringent standards of performance and
+            security. Proficient in effective communication and adept at
+            collaborative teamwork, I am enthusiastic about embracing fresh
+            challenges within the realm of web development.
           </h1>
         </section>
         <section className="flex flex-wrap justify-start w-[80%] top-20 mb-20 m-6 max-sm:flex max-sm:justify-center">
@@ -42,12 +41,16 @@ const Hero = () => {
           <Button buttonName={"Button 2"} />
           <Button buttonName={"Button 3"} />
         </section>
-        <section className="flex justify-start flex-wrap">
-        <IoLogoJavascript size={75} style={{margin:'20px' }}/>
-        <SiTypescript size={75} style={{margin:'20px'}}/>
-        <SiAngular size={75} style={{margin:'20px'}}/>
-        <IoLogoJavascript size={75} style={{margin:'20px'}}/>
-        </section>
+        {/* <section className="flex justify-start flex-wrap">
+          <IoLogoJavascript
+            className={"max-sm:text-sm"}
+            size={75}
+            style={{ margin: "20px" }}
+          />
+          <SiTypescript size={75} style={{ margin: "20px" }} />
+          <SiAngular size={75} style={{ margin: "20px" }} />
+          <IoLogoJavascript size={75} style={{ margin: "20px" }} />
+        </section> */}
       </article>
     </>
   );
