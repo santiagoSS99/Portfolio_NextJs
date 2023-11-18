@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <article className="flex sticky flex-col items-center center justify-center h-screen max-sm:mt-10 shadow-xl">
         <div />
-        <section className="overflow-x-hidden w-[85%] rounded-xl backdrop-blur border bg-softwhite shadow-2xl justify-center max-h-[90vh] max-sm:h-[35%] overflow-auto box-border scroll-m-3">
+        <section className="overflow-x-hidden w-[85%] rounded-xl backdrop-blur border bg-softwhite shadow-2xl justify-center max-h-[90vh] max-sm:h-[32%] overflow-auto box-border scroll-m-3">
           <motion.h2
             whileHover={{ scale: 1.2 }}
             transition={{ ease: "easeOut" }}
