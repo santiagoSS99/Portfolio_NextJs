@@ -1,14 +1,9 @@
 "use client";
 
-const Button = ({ buttonName = "" }) => {
+export function Button({ buttonName = "" }) {
   return (
     <>
-      <div className="absolute bottom-0 w-full flex justify-center mb-5">
-        <button>{buttonName}</button>
-        {/* <button className="p-7 bg-slate-500 rounded-xl mx-2 my-2">{buttonName}</button> */}
-      </div>
+      <button className="p-4 text-white bg-slate-500 tex rounded-xl mx-2 my-2">{buttonName}</button>
     </>
   );
-};
-
-export default Button;
+}

@@ -3,14 +3,14 @@
 import React from "react";
 import "../app/global.css";
 import { motion } from "framer-motion";
-import Button from "./Button";
+import { Button } from "./Button";
 
 const Hero = () => {
   return (
     <>
-      <article className="flex bg-hero justify-center h-screen dark:bg-slate-800 shadow-xl relative">
+      <article className="flex bg-hero flex-col items-center w-full center justify-center h-screen dark:bg-slate-800 shadow-xl relative">
         <div />
-        <section className="top-[150px] max-sm:top-[150px] w-[80%] h-auto rounded-xl backdrop-blur bg-softwhite absolute">
+        <section className="top-[150px] max-sm:top-[150px] w-[80%] h-auto rounded-xl backdrop-blur bg-softwhite absolute justify-center overflow-hidden max-h-[90vh] grid grid-rows-1">
           <motion.h2
             whileHover={{ scale: 1.2 }}
             transition={{ ease: "easeOut" }}
@@ -32,11 +32,15 @@ const Hero = () => {
             challenges in web development.
           </h1>
         </section>
-      <div className="flex justify-center">
-        <Button buttonName={"Button 1"} />
-        <Button buttonName={"Button 1"} />
-        <Button buttonName={"Button 1"} />
-      </div>
+        <section className=" w-full flex flex-wrap justify-center">
+          <div className="">
+            <Button buttonName={"Button 1"} />
+          </div>
+          <div>
+            <Button buttonName={"Button 2"} />
+          </div>
+          <Button buttonName={"Button 3"} />
+        </section>
       </article>
     </>
   );
