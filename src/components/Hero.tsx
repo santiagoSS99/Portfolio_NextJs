@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 import { Button } from "./Button";
 
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript, SiAngular, SiReact } from "react-icons/si";
+import { SiTypescript, SiAngular, SiReact, SiNestjs } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 
 const Hero = () => {
   return (
     <>
-      <article className="flex sticky flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
+      <article className="flex flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
         <div />
         <section className="overflow-x-hidden w-[85%] rounded-xl backdrop-blur border bg-softwhite shadow-2xl justify-center max-h-[90vh] max-sm:h-[35%] overflow-auto box-border scroll-m-3">
           <motion.h2
@@ -36,27 +36,26 @@ const Hero = () => {
             challenges within the realm of web development.
           </h1>
         </section>
-        <article className="mt-6">
-          <section className="flex justify-center">
-            <h1 className="text-2xl uppercase font-bold	flex justify-center flex-wrap ">Skills</h1>
+        <article className="mt-6 sm:flex">
+          <section className="flex items-center justify-center">
+            <h1 className="text-2xl uppercase font-bold	flex mx-10 items-center">
+              Skills:
+            </h1>
           </section>
-          <section className="flex max-sm:flex max-sm:justify-center flex-wrap">
-            <IoLogoJavascript
-              className=""
-              size={25}
-              style={{ margin: "20px" }}
-            />
+          <section className="flex justify-center items-center max-sm:flex-wrap">
+            <IoLogoJavascript size={25} style={{ margin: "20px" }} />
             <SiTypescript size={25} style={{ margin: "20px" }} />
             <SiAngular size={25} style={{ margin: "20px" }} />
             <SiReact size={25} style={{ margin: "20px" }} />
             <FaNode size={25} style={{ margin: "20px" }} />
+            <SiNestjs size={25} style={{ margin: "20px" }} />
           </section>
         </article>
-        <section className="flex flex-wrap justify-start w-[80%] top-20  max-sm:flex max-sm:justify-center">
-          <Button buttonName={"Play BlackJack Game"} />
-          <Button buttonName={"Button 2"} />
-          <Button buttonName={"Button 3"} />
-        </section>
+          <section className="w-[80%] top-20 flex justify-center">
+            <Button buttonName={"Play BlackJack Game"} />
+            <Button buttonName={"Button 2"} />
+            <Button buttonName={"Button 3"} />
+          </section>
       </article>
     </>
   );
