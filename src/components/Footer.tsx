@@ -31,10 +31,10 @@ const Footer = () => {
               <FaFacebook size={20} style={{ margin: 5 }} />
             </div>
           </section>
-          <article className="flex justify-between w-auto">
-            <section className="flex justify-between">
+          <article className="flex justify-between w-auto max-sm:flex-none max-sm:flex-col">
+            <section className="flex justify-between max-sm:flex-none">
               <div className="text-white leading-10 px-3">
-                <h1 className="font-bold">Solutions</h1>
+                <h1 className="font-bold ">Solutions</h1>
                 <h1>Marketing</h1>
                 <h1>Analytics</h1>
                 <h1>Commerce</h1>
@@ -42,11 +42,11 @@ const Footer = () => {
               <div className="text-white leading-10 px-3">
                 <h1 className="font-bold">Support</h1>
                 <h1>Pricing</h1>
-                <h1>Documentation</h1>
+                <h1>Document</h1>
                 <h1>Guides</h1>
               </div>
             </section>
-            <section className="flex justify-between">
+            <section className="flex justify-between max-sm:flex-none">
               <div className="text-white leading-10 px-3">
                 <h1 className="font-bold">Company</h1>
                 <h1>About</h1>
@@ -56,7 +56,7 @@ const Footer = () => {
               <div className="text-white leading-10 px-3">
                 <h1 className="font-bold">Legal</h1>
                 <h1>Claim</h1>
-                <h1>Privacy</h1>
+                <h1>Document</h1>
                 <h1>Terms</h1>
               </div>
             </section>
