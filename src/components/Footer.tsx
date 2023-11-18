@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <footer className="footer-bg pt-32 px-8 pb-8 max-sm:flex-none flex justify-between w-full">
         <article className="justify-between flex max-sm:flex-col w-full">
-          <section className="w-[40%]">
+          <section className="w-[40%] max-sm:w-full">
             <Link href={"/"}>
               <Image
                 src={logo}
