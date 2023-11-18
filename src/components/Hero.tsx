@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import { Button } from "./Button";
 
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript, SiAngular } from "react-icons/si";
-import { PiAngularLogoFill } from "react-icons/pi";
+import { SiTypescript, SiAngular, SiReact } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -36,12 +36,19 @@ const Hero = () => {
             challenges within the realm of web development.
           </h1>
         </section>
-        <section className="flex justify-start flex-wrap mt-6">
-          <IoLogoJavascript className="" size={25} style={{ margin: "20px" }} />
-          <SiTypescript size={25} style={{ margin: "20px" }} />
-          <SiAngular size={25} style={{ margin: "20px" }} />
-          <IoLogoJavascript size={25} style={{ margin: "20px" }} />
-        </section>
+        <article className="mt-6">
+          <section className="flex justify-center">
+            <h1 className="text-2xl uppercase font-bold	">Skills</h1>
+          </section>
+          <hr className="mt-6" />
+          <section className="flex mt-6 top">
+            <IoLogoJavascript size={25} style={{ margin: "20px" }} />
+            <SiTypescript size={25} style={{ margin: "20px" }} />
+            <SiAngular size={25} style={{ margin: "20px" }} />
+            <SiReact size={25} style={{ margin: "20px" }} />
+            <FaNode size={25} style={{ margin: "20px" }} />
+          </section>
+        </article>
         <section className="flex flex-wrap justify-start w-[80%] top-20 mb-20 m-6 max-sm:flex max-sm:justify-center">
           <Button buttonName={"Play BlackJack Game"} />
           <Button buttonName={"Button 2"} />
