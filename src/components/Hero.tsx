@@ -11,7 +11,7 @@ import { FaNode, FaGithub  } from "react-icons/fa";
 const Hero = () => {
   return (
     <>
-      <article className="flex flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4 shadow-lg">
+      <article className="flex top flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
         <div />
         <section className="overflow-x-hidden w-[85%] rounded-xl backdrop-blur border bg-softwhite shadow-2xl justify-center max-h-[90vh] max-sm:h-[32%] overflow-auto box-border scroll-m-3">
           <motion.h2
@@ -21,11 +21,11 @@ const Hero = () => {
           >
             Santiago Sanchez
           </motion.h2>
-          <p className="text-slate-900 dark:text-slate-900 mt-2 text-sm flex justify-center max-sm:mt-4 max-sm:flex max-sm:justify-center">
+          <p className="text-slate-900 dark:text-slate-900 mt-6 text-sm flex justify-center max-sm:mt-4 max-sm:flex max-sm:justify-center">
             About Me
           </p>
-          <h1 className="text-slate-900 dark:text-slate-900 mt-2 text-sm m-10 max-sm:my-3">
-            am a Systems Engineer with over a year of dedicated experience in
+          <h1 className="text-slate-900 dark:text-slate-900 mt-6 text-sm m-10 max-sm:my-3">
+            I am a Systems Engineer with over a year of dedicated experience in
             web development, specializing in technologies such as Typescript,
             Angular, NextJs, and Node.js. I possess a great dedication to
             self-directed learning, constantly pursuing avenues for professional
@@ -38,44 +38,44 @@ const Hero = () => {
         </section>
         <article className="mt-6 sm:flex">
           <section className="flex items-center justify-center">
-            <h1 className="text-2xl uppercase font-bold	flex mx-10 items-center">
+            <h1 className="text-2xl max-sm:text-sm uppercase font-bold	flex mx-10 items-center">
               Skills languages:
             </h1>
           </section>
           <section className="flex justify-center items-center max-sm:flex-wrap">
-            <IoLogoJavascript size={25} style={{ margin: "20px" }} />
-            <SiTypescript size={25} style={{ margin: "20px" }} />
-            <FaNode size={25} style={{ margin: "20px" }} />
+            <IoLogoJavascript size={22} style={{ margin: "20px" }} />
+            <SiTypescript size={22} style={{ margin: "20px" }} />
+            <FaNode size={22} style={{ margin: "20px" }} />
           </section>
         </article>
         <article className="mt-6 sm:flex">
           <section className="flex items-center justify-center">
-            <h1 className="text-2xl uppercase font-bold	flex mx-10 items-center">
+            <h1 className="text-2xl max-sm:text-sm uppercase font-bold	flex mx-10 items-center">
               Frameworks/Libraries:
             </h1>
           </section>
           <section className="flex justify-center items-center max-sm:flex-wrap">
-            <SiAngular size={25} style={{ margin: "20px" }} />
-            <SiReact size={25} style={{ margin: "20px" }} />
-            <FaNode size={25} style={{ margin: "20px" }} />
-            <SiNestjs size={25} style={{ margin: "20px" }} />
+            <SiAngular size={22} style={{ margin: "20px" }} />
+            <SiReact size={22} style={{ margin: "20px" }} />
+            <FaNode size={22} style={{ margin: "20px" }} />
+            <SiNestjs size={22} style={{ margin: "20px" }} />
           </section>
         </article>
         <article className="mt-6 sm:flex">
           <section className="flex items-center justify-center">
-            <h1 className="text-2xl uppercase font-bold	flex mx-10 items-center">
+            <h1 className="text-2xl max-sm:text-sm uppercase font-bold	flex mx-10 items-center">
               Version Control:
             </h1>
           </section>
           <section className="flex justify-center items-center max-sm:flex-wrap">
-            <FaGithub size={25} style={{ margin: "20px" }} />
+            <FaGithub size={22} style={{ margin: "20px" }} />
           </section>
         </article>
-          <section className="w-[80%] top-20 flex justify-center flex-wrap">
+          {/* <section className="w-[80%] top-20 flex justify-center flex-wrap">
             <Button buttonName={"Play BlackJack Game"} />
             <Button buttonName={"Button 2"} />
             <Button buttonName={"Button 3"} />
-          </section>
+          </section> */}
       </article>
     </>
   );
