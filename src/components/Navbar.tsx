@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex sticky items-center justify-center" style={{zIndex:'99'}}>
-        <nav className="fixed flex w-[98%] h-24 shadow-xl rounded-xl justify-between top-2 items-center px-4 backdrop-blur bg-softwhite">
+        <nav className="fixed flex w-[98%] h-24 shadow-xl rounded-3xl justify-between top-2 items-center px-4 backdrop-blur bg-softwhite">
           <section>
             <Link href={"/"}>
               <Image src={logo} width={35} height={35} alt="logo" />
@@ -44,14 +44,14 @@ const Navbar = () => {
           <section className="p-5 space-x-4 jusify-center hidden sm:flex">
             {navBarItems.map(({ name, link }) => (
               <Link key={name} href={link}>
-                <h1 className="text-black border border-slate-700 rounded-md px-3 py-2 text-sm font-medium hover:bg-slate-800 hover:text-white focus:outline-none focus:ring focus:ring-violet-300">
+                <li className="text-black items-center text-sm rounded-3xl px-3 py-2 font-medium hover:bg-slate-800 hover:text-white focus:outline-none focus:ring focus:ring-violet-300">
                   {name}
-                </h1>
+                </li>
               </Link>
             ))}
           </section>
           <section className="items-center hidden sm:flex">
-            <button className="bg-slate-800 text-zinc-50 border border-slate-700 rounded-md px-3 py-2 text-sm font-medium hover:bg-zinc-50 hover:text-black focus:outline-none focus:ring focus:ring-violet-300">
+            <button className="bg-slate-800 text-zinc-50 border border-slate-700 rounded-3xl px-6 py-2 text-sm font-medium hover:bg-zinc-50 hover:text-black focus:outline-none focus:ring focus:ring-violet-300">
               Hire Me
             </button>
           </section>
