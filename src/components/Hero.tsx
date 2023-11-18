@@ -33,11 +33,9 @@ const Hero = () => {
           </h1>
         </section>
       <div className="flex justify-center">
-        {" "}
-        {/* Contenedor del botón */}
-        <Button children="Button 1" />
-        <Button children="Button 1" />
-        <Button children="Button 1" />
+        <Button buttonName={"Button 1"} />
+        <Button buttonName={"Button 1"} />
+        <Button buttonName={"Button 1"} />
       </div>
       </article>
     </>
