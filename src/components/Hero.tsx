@@ -11,7 +11,17 @@ import { FaNode, FaGithub  } from "react-icons/fa";
 const Hero = () => {
   return (
     <>
-      <article className="flex top flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
+    <article className="sm:hidden flex top flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
+    <motion.h2
+            whileHover={{ scale: 1.2 }}
+            transition={{ ease: "easeOut" }}
+            className="flex justify-center max-sm:text-5xl center-ultrasm font-black uppercase"
+          >
+            Santiago Sanchez
+          </motion.h2>
+          <span className="w-[75%] flex justify-end mt-3">See More</span>
+    </article>
+      <article className="max-sm:hidden flex top flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
         <div />
         <section className="overflow-x-hidden w-[85%] rounded-xl backdrop-blur border bg-softwhite shadow-2xl justify-center max-h-[90vh] max-sm:h-[32%] overflow-auto box-border scroll-m-3">
           <motion.h2

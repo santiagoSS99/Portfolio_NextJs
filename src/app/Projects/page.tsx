@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section className="w-screen h-screen flex justify-center items-center py-100">
       {/* <Button/> */}
-      <motion.h1 className="text-6xl" animate={{x: -160}}>Projects</motion.h1>
+      <motion.h1 className="text-6xl" animate={{x: -100}}>Projects</motion.h1>
     </section>
   );
 };
