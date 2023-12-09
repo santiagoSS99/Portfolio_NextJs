@@ -1,11 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "./Button";
-// import { SkillComponent } from "./SkillsComponent";
-// import { AboutMeSection } from "./AboutMe";
 
-import { SkillComponent, AboutMeSection } from "./index";
+import { SkillComponent, AboutMeSection, SeeMoreLink } from "./index";
 
 import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript, SiAngular, SiReact, SiNestjs } from "react-icons/si";
@@ -22,7 +19,7 @@ const Hero = () => {
         >
           Santiago Sanchez
         </motion.h2>
-        <SeeMoreLink />
+        <SeeMoreLink/>
       </article>
       <article className="max-sm:hidden flex top flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
         <div />
@@ -56,10 +53,6 @@ const Hero = () => {
   );
 };
 
-const SeeMoreLink = () => (
-  <span className="flex justify-end mt-2">
-    <a href="">See More</a>
-  </span>
-);
+
 
 export default Hero;

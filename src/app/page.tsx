@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <section>
         <Hero />
-        <section></section>
         <section className="m-6"></section>
 
         <Footer />
