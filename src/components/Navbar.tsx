@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {usePathname} from "next/navigation";
 import React, { useState } from "react";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -10,6 +9,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../app/global.css";
 
 const logo = require("../../public/ssclogo.svg");
+
 
 const navBarItems = [
   {

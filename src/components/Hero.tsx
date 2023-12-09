@@ -7,11 +7,20 @@ import { SkillComponent, AboutMeSection, SeeMoreLink } from "./index";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript, SiAngular, SiReact, SiNestjs } from "react-icons/si";
 import { FaNode, FaGithub } from "react-icons/fa";
+import Image from "next/image";
+
+const logo = require("../../public/Me.png");
 
 const Hero = () => {
   return (
     <>
-      <article className="sm:hidden flex top flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
+      <article className="sm:hidden flex top flex-col items-center justify-center h-screen max-sm:mt-10 mt-4">
+        <Image
+          src={logo}
+          width={240}
+          alt="photoOfMe"
+          className="rounded-full w-[150px]"
+        />
         <motion.h2
           whileHover={{ scale: 1.2 }}
           transition={{ ease: "easeOut" }}
@@ -19,21 +28,29 @@ const Hero = () => {
         >
           Santiago Sanchez
         </motion.h2>
-        <SeeMoreLink/>
+        {/* <SeeMoreLink/> */}
       </article>
       <article className="max-sm:hidden flex top flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
         <div />
-        <AboutMeSection username="Santiago Sanchez" about="About Me">
-          I am a Systems Engineer with over a year of dedicated experience in
-          web development, specializing in technologies such as Typescript,
-          Angular, NextJs, and Node.js. I possess a great dedication to
-          self-directed learning, constantly pursuing avenues for professional
-          advancement. My commitment lies in crafting innovative, top-tier web
-          solutions while upholding stringent standards of performance and
-          security. Proficient in effective communication and adept at
-          collaborative teamwork, I am enthusiastic about embracing fresh
-          challenges within the realm of web development.
-        </AboutMeSection>
+        <section className="flex justify-center">
+          <Image
+            src={logo}
+            width={240}
+            alt="photoOfMe"
+            className="rounded-full"
+          />
+          <AboutMeSection username="Santiago Sanchez" about="About Me">
+            I am a Systems Engineer with over a year of dedicated experience in
+            web development, specializing in technologies such as Typescript,
+            Angular, NextJs, and Node.js. I possess a great dedication to
+            self-directed learning, constantly pursuing avenues for professional
+            advancement. My commitment lies in crafting innovative, top-tier web
+            solutions while upholding stringent standards of performance and
+            security. Proficient in effective communication and adept at
+            collaborative teamwork, I am enthusiastic about embracing fresh
+            challenges within the realm of web development.
+          </AboutMeSection>
+        </section>
         <SkillComponent skillTitle="Skills Languages:">
           <IoLogoJavascript size={22} style={{ margin: "20px" }} />
           <SiTypescript size={22} style={{ margin: "20px" }} />
