@@ -1,5 +1,6 @@
 interface BoxexInterfaceComponent {
     titlebox: string;
     briefdesc: string;
-    children: React.ReactNode
+    children: React.ReactNode;
+    imagepath: string;
   }

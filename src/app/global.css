@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@800&family=Montserrat:wght@600&display=swap');
 
 .bg-hero{
     background-image: url('https://images.unsplash.com/photo-1604147495798-57beb5d6af73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -24,4 +25,8 @@
 
 .about-mepx{
     padding: 7px 15px;
+}
+
+.montserrat-font{
+    font-family: 'Montserrat', sans-serif;
 }
