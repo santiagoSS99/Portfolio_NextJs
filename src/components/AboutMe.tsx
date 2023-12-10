@@ -11,7 +11,7 @@ interface AboutMeComponentProps {
 export function AboutMeSection({ username, about, children }: AboutMeComponentProps) {
   return (
     <>
-      <article className="overflow-x-hidden w-[65%] rounded-xl backdrop-blur border bg-softwhite shadow-2xl justify-center max-h-[90vh] max-sm:h-[32%] overflow-auto box-border scroll-m-3">
+      <article className="mx-8 overflow-x-hidden w-[65%] rounded-xl backdrop-blur border bg-softwhite shadow-2xl justify-center max-h-[90vh] max-sm:h-[32%] overflow-auto box-border scroll-m-3">
         <section>
           <motion.h2
             whileHover={{ scale: 1.2 }}
