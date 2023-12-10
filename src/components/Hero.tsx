@@ -14,12 +14,12 @@ const logo = require("../../public/Me.png");
 const Hero = () => {
   return (
     <>
-      <article className="sm:hidden flex top flex-col items-center justify-center h-screen max-sm:mt-10 mt-4">
+      <article className="sm:hidden flex flex-col items-center justify-center h-screen">
         <Image
           src={logo}
           width={240}
           alt="photoOfMe"
-          className="rounded-full w-[150px]"
+          className="rounded-full w-[190px]"
         />
         <motion.h2
           whileHover={{ scale: 1.2 }}
@@ -32,7 +32,7 @@ const Hero = () => {
       </article>
       <article className="max-sm:hidden flex top flex-col items-center center justify-center h-screen max-sm:mt-10 mt-4">
         <div />
-        <section className="flex justify-center">
+        <section className="flex justify-center items-center">
           <Image
             src={logo}
             width={240}

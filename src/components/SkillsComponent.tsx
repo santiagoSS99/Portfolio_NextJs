@@ -1,8 +1,3 @@
-interface SkillComponentProps {
-  skillTitle: string;
-  children: React.ReactNode;
-}
-
 export function SkillComponent({ skillTitle, children }: SkillComponentProps) {
   return (
     <>
