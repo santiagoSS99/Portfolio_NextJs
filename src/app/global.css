@@ -30,3 +30,9 @@
 .montserrat-font{
     font-family: 'Montserrat', sans-serif;
 }
+
+.gradientHero{
+    background-color: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    background-clip: text;
+    /* color: transparent; */
+}

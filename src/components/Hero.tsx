@@ -24,7 +24,7 @@ const Hero = () => {
         <motion.h2
           whileHover={{ scale: 1.2 }}
           transition={{ ease: "easeOut" }}
-          className="flex justify-center max-sm:text-5xl center-ultrasm font-black uppercase"
+          className="flex justify-center max-sm:text-5xl center-ultrasm font-black uppercase gradientHero"
         >
           Santiago Sanchez
         </motion.h2>

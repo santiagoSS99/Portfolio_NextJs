@@ -21,9 +21,9 @@ const BoxesContainer = ({
         </section>
         <section className="p-3">{children}</section>
         <section>
-          <button className="flex mb-0">
+          <div className="flex mb-0">
             <SeeMoreLink />
-          </button>
+          </div>
         </section>
       </article>
     </>
