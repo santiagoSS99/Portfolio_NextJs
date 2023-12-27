@@ -58,7 +58,7 @@ const Navbar = () => {
               Hire Me
             </button>
             <button className="bg-transparent mx-1 text-black border border-slate-700 rounded-3xl px-6 py-2 text-sm font-medium hover:bg-zinc-50 hover:text-black focus:outline-none focus:ring focus:ring-violet-300">
-              Login
+              <Link href="/login">Login</Link>
             </button>
           </section>
           <section
