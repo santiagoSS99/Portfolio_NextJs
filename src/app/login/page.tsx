@@ -4,7 +4,7 @@ import { FaLock, FaUser } from "react-icons/fa";
 const Login = () => {
   return (
     <article className="flex justify-center items-center h-screen ">
-      <form className="flex flex-col justify-center items-center w-[45%] p-8 h-auto shadow-2xl rounded-3xl backdrop-blur bg-softwhite">
+      <form className="flex flex-col justify-center items-center w-auto p-8 h-auto shadow-2xl rounded-3xl backdrop-blur bg-softwhite">
         <h1 className="font-black text-2xl my-4">Login</h1>
         <section className="flex relative justify-center w-full">
           <input type="text" placeholder="Username" required className="w-full border-2 p-3 my-3 rounded-full"/>
