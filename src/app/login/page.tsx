@@ -19,16 +19,16 @@ const Login = () => {
             <input type="checkbox" />
             Remember me
           </label>
-          <a href="">Forgot Password?</a>
+          {/* <a href="">Forgot Password?</a> */}
         </section>
 
         <section>
-          <button type="submit">Login</button>
+          {/* <button type="submit">Login</button> */}
         </section>
 
         <section>
           <p>
-            Don't have an account? <a href="">Register</a>
+            {/* Don't have an account? <a href="">Register</a> */}
           </p>
         </section>
       </form>
