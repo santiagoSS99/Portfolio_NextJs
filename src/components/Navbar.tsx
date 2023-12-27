@@ -10,7 +10,6 @@ import "../app/global.css";
 
 const logo = require("../../public/ssclogo.svg");
 
-
 const navBarItems = [
   {
     name: "About Me",
@@ -35,7 +34,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex sticky items-center justify-center" style={{zIndex:'99'}}>
+      <div
+        className="flex sticky items-center justify-center"
+        style={{ zIndex: "99" }}
+      >
         <nav className="fixed flex w-[98%] h-24 shadow-xl rounded-3xl justify-between top-2 items-center px-4 backdrop-blur bg-softwhite">
           <section>
             <Link href={"/"}>
@@ -52,8 +54,11 @@ const Navbar = () => {
             ))}
           </section>
           <section className="items-center hidden sm:flex">
-            <button className="bg-slate-800 text-zinc-50 border border-slate-700 rounded-3xl px-6 py-2 text-sm font-medium hover:bg-zinc-50 hover:text-black focus:outline-none focus:ring focus:ring-violet-300">
+            <button className="bg-slate-800 mx-1 text-zinc-50 border border-slate-700 rounded-3xl px-6 py-2 text-sm font-medium hover:bg-zinc-50 hover:text-black focus:outline-none focus:ring focus:ring-violet-300">
               Hire Me
+            </button>
+            <button className="bg-transparent mx-1 text-black border border-slate-700 rounded-3xl px-6 py-2 text-sm font-medium hover:bg-zinc-50 hover:text-black focus:outline-none focus:ring focus:ring-violet-300">
+              Login
             </button>
           </section>
           <section
@@ -82,6 +87,14 @@ const Navbar = () => {
                   </h1>
                 </Link>
               ))}
+            </section>
+            <section className="flex-col flex justify-center items-center sm:flex">
+              <button className="bg-slate-800 my-1 text-zinc-50 border border-slate-700 rounded-3xl px-6 py-2 text-sm font-medium hover:bg-zinc-50 hover:text-black focus:outline-none focus:ring focus:ring-violet-300">
+                Hire Me
+              </button>
+              <button className="bg-transparent my-1 text-black border border-slate-700 rounded-3xl px-6 py-2 text-sm font-medium hover:bg-zinc-50 hover:text-black focus:outline-none focus:ring focus:ring-violet-300">
+                Login
+              </button>
             </section>
           </section>
         </nav>

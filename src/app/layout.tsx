@@ -1,3 +1,4 @@
+import MaybeShowNavbar from "@/components/MaybeShowNavbar/MaybeShowNavbar";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
@@ -13,7 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <MaybeShowNavbar>
+          <Navbar />
+        </MaybeShowNavbar>
         {children}
       </body>
     </html>
