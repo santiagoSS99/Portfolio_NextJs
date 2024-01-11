@@ -1,7 +1,9 @@
-export default function CounterPage(){
-    return(
-        <>
-        <h1>yaca yaca you</h1>
-        </>
-    )
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>Page Counter</div>
+  )
 }
+
+export default page

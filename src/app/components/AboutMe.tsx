@@ -1,6 +1,8 @@
+"use client"
+
 import { motion } from "framer-motion";
 
-import "../app/global.css";
+import "../global.css";
 
 
 export function AboutMeSection({ username, about, children }: AboutMeComponentProps) {

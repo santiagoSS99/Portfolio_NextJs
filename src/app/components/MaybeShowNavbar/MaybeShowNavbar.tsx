@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const MaybeShowNavbar = ({ children }: DefaultInterface) => {
@@ -9,11 +9,15 @@ const MaybeShowNavbar = ({ children }: DefaultInterface) => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
-    console.log("this is the pathName" ,location);
-    if (location === "/dashboard/counter" || location === "/login"){
-        setShowNavbar(false);
+    console.log("this is the pathName", location);
+    if (
+      location === "/dashboard" ||
+      location === "/dashboard/counter" ||
+      location === "/login"
+    ) {
+      setShowNavbar(false);
     } else {
-        setShowNavbar(true);
+      setShowNavbar(true);
     }
   }, [location]);
 

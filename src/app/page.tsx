@@ -1,8 +1,8 @@
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import Footer from "@/app/components/Footer";
+import Hero from "@/app/components/Hero";
 import React from "react";
 
-import ProjectsComponent from "@/components/ProjectsComponent";
+import ProjectsComponent from "@/app/components/ProjectsComponent";
 
 export default function Home() {
   return (

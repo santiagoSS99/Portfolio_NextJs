@@ -1,11 +1,22 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
-const SideOptions = ({titlesection, briefoverview}: SideOptionsInterface) => {
+const SideOptions = ({ path, title, subtitle }: SideOptionsInterface) => {
+  const location = usePathname();
+
+  console.log('soy el path', path)
+  console.log('soy el location', location)
+
   return (
     <>
-      <a
-        href="#"
-        className="w-full px-2 inline-flex space-x-2 items-center border my-2 rounded-xl border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150"
+      <Link
+        href={path}
+        className={`w-full px-2 inline-flex space-x-2 items-center border my-2 rounded-xl border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150 ${
+          location === path ? "bg-blue-800" : ""
+        }`}
       >
         <div>
           <svg
@@ -25,13 +36,13 @@ const SideOptions = ({titlesection, briefoverview}: SideOptionsInterface) => {
         </div>
         <div className="flex flex-col">
           <span className="text-lg font-bold leading-5 text-stone-800">
-            {titlesection}
+            {title}
           </span>
           <span className="text-sm text-stone-600 hidden md:block">
-            {briefoverview}
+            {subtitle}
           </span>
         </div>
-      </a>
+      </Link>
     </>
   );
 };

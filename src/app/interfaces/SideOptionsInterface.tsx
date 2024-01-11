@@ -1,5 +1,6 @@
 interface SideOptionsInterface {
-    titlesection: string;
-    briefoverview: string;
-    // children: React.ReactNode;
-  }
+  path: string;
+  title: string;
+  subtitle: string;
+  // children: React.ReactNode;
+}

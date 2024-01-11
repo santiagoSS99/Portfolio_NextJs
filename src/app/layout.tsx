@@ -1,5 +1,5 @@
-import MaybeShowNavbar from "@/components/MaybeShowNavbar/MaybeShowNavbar";
-import Navbar from "@/components/Navbar";
+import MaybeShowNavbar from "@/app/components/MaybeShowNavbar/MaybeShowNavbar";
+import Navbar from "@/app/components/Navbar";
 
 export const metadata = {
   title: "Next.js",
