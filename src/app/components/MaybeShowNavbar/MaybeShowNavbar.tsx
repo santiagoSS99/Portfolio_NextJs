@@ -9,16 +9,11 @@ const MaybeShowNavbar = ({ children }: DefaultInterface) => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
-    console.log("this is the pathName", location);
-    if (
-      location === "/dashboard" ||
-      location === "/dashboard/counter" ||
-      location === "/login"
-    ) {
-      setShowNavbar(false);
-    } else {
-      setShowNavbar(true);
-    }
+    const dashboardRegex = /\/dashboard/i;
+    const isDashboard = dashboardRegex.test(location);
+    console.log("isDashboard", isDashboard);
+
+    setShowNavbar(!isDashboard);
   }, [location]);
 
   return <div>{showNavbar && children}</div>;

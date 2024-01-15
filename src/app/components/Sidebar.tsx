@@ -1,9 +1,25 @@
 import Image from "next/image";
 import React from "react";
-import SideMenuItems from "../dashboard/components/SideMenuItems";
+import SideMenuItem from "./SideMenuItem";
 import Link from "next/link";
+import { IoBrowsersOutline, IoCalculator } from "react-icons/io5";
 
 const logo = require("../../../public/ssclogo.svg");
+
+const menuItems = [
+  {
+    path: "/dashboard/main",
+    icon: <IoBrowsersOutline size={40}/>,
+    title: "Dashboard",
+    subtitle: "Main Page"
+  },
+  {
+    path: "/dashboard/counter",
+    icon: <IoCalculator size={40}/>,
+    title: "Dashboard",
+    subtitle: "Counter client Side"
+  },
+]
 
 export const Sidebar = () => {
   return (
@@ -12,7 +28,7 @@ export const Sidebar = () => {
       style={{ width: "300px" }}
       className="backdrop-blur bg-softwhite shadow-xl rounded-3xl min-h-screen z-10 text-slate-300 w-64 left-0 h-screen"
     >
-      <Link href={"/dashboard/counter"}>
+      <Link href={"/dashboard/main"}>
         <Image style={{padding:"0px", margin:"20px"}} src={logo} width={35} height={35} alt={""}></Image>
       </Link>
       <div id="profile" className="px-6 py-10">
@@ -34,16 +50,11 @@ export const Sidebar = () => {
       </div>
 
       <div id="nav" className="w-full px-6">
-        <SideMenuItems
-          path={"/dashboard/counter"}
-          title={"Dashboard"}
-          subtitle="Analyze"
-        />
-        <SideMenuItems
-          path={"/dashboard/secondpage"}
-          title={"secondpage"}
-          subtitle="Analyze"
-        />
+        {
+          menuItems.map(menuItem => (
+            <SideMenuItem key={menuItem.path} {...menuItem}/>
+          ))
+        }
       </div>
     </div>
   );
