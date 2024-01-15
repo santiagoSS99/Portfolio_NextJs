@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import SideMenuItems from "../dashboard/components/SideMenuItems";
 
 export const Sidebar = () => {
   return (
     <div
       id="menu"
       style={{ width: "300px" }}
-      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen"
+      className="backdrop-blur bg-softwhite shadow-xl rounded-3xl min-h-screen z-10 text-slate-300 w-64 left-0 h-screen"
     >
       <div id="logo" className="my-4 px-6">
         <h1 className="text-lg md:text-2xl font-bold text-white">
@@ -35,7 +36,7 @@ export const Sidebar = () => {
       </div>
 
       <div id="nav" className="w-full px-6">
-        <a
+        {/* <a
           href="#"
           className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 bg-blue-800 hover:bg-white/5 transition ease-linear duration-150"
         >
@@ -63,7 +64,8 @@ export const Sidebar = () => {
               Data Overview
             </span>
           </div>
-        </a>
+        </a> */}
+        <SideMenuItems path={"/dashboard/counter"} title={"Dashboard"} subtitle="Analyze"/>
       </div>
     </div>
   );

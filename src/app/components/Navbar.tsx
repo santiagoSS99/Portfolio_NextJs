@@ -6,7 +6,6 @@ import React, { useState } from "react";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-// import "../app/global.css";
 import "../global.css";
 
 const logo = require("../../../public/ssclogo.svg");

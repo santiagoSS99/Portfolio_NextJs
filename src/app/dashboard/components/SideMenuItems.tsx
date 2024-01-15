@@ -15,7 +15,7 @@ const SideMenuItems = ({ path, title, subtitle }: SideOptionsInterface) => {
       <Link
         href={path}
         className={`w-full px-2 inline-flex space-x-2 items-center border my-2 rounded-xl border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150 ${
-          location === path ? "bg-blue-800" : ""
+          location === path ? "bg-blue-500" : ""
         }`}
       >
         <div>
