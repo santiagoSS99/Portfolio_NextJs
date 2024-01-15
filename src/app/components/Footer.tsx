@@ -1,6 +1,6 @@
 "use client";
 
-const logo = require("../../public/ssclogow.svg");
+const logo = require("../../../public/ssclogow.svg");
 
 import Link from "next/link";
 import Image from "next/image";

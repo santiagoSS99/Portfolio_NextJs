@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const SideOptions = ({ path, title, subtitle }: SideOptionsInterface) => {
+const SideMenuItems = ({ path, title, subtitle }: SideOptionsInterface) => {
   const location = usePathname();
 
   console.log('soy el path', path)
@@ -47,4 +47,4 @@ const SideOptions = ({ path, title, subtitle }: SideOptionsInterface) => {
   );
 };
 
-export default SideOptions;
+export default SideMenuItems;
