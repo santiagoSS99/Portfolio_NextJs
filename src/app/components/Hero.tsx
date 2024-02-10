@@ -9,7 +9,7 @@ import { SiTypescript, SiAngular, SiReact, SiNestjs } from "react-icons/si";
 import { FaNode, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
-const logo = require("../../../public/Me.png");
+const {logo} = require("../../../public/Me.png");
 
 const Hero = () => {
   return (

@@ -8,7 +8,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import "../global.css";
 
-const logo = require("../../../public/ssclogo.svg");
+const {logo} = require("../../../public/ssclogo.svg");
 
 const navBarItems = [
   {

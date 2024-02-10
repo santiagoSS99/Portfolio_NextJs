@@ -4,7 +4,7 @@ import SideMenuItem from "./SideMenuItem";
 import Link from "next/link";
 import { IoBrowsersOutline, IoCalculator } from "react-icons/io5";
 
-const logo = require("../../../public/ssclogo.svg");
+const {logo} = require("../../../public/ssclogo.svg");
 
 const menuItems = [
   {
@@ -14,10 +14,16 @@ const menuItems = [
     subtitle: "Main Page"
   },
   {
+    path: "/dashboard/finance",
+    icon: <IoCalculator size={40}/>,
+    title: "Finance",
+    subtitle: "Ingresoss"
+  },
+  {
     path: "/dashboard/counter",
     icon: <IoCalculator size={40}/>,
-    title: "Dashboard",
-    subtitle: "Counter client Side"
+    title: "Counter",
+    subtitle: "Counter"
   },
 ]
 

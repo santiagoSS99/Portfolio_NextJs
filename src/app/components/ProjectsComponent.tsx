@@ -1,9 +1,8 @@
 'use client'
 
-import { SeeMoreLink } from ".";
 import BoxesContainer from "./BoxesComponent";
 
-const logo = require("../../../public/ssclogo.svg");
+const {logo} = require("../../../public/ssclogo.svg");
 
 const ProjectsComponent = () => {
   return (
