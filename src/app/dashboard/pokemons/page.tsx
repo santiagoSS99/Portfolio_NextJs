@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PokemonsGrid, PokemonsResponse, SimplePokemon } from '@/products';
+import { PokemonsGrid, PokemonsResponse, SimplePokemon } from '@/pokemons';
 
 const getPokemons = async (limit = 200, offset = 0): Promise<SimplePokemon[]> => {
   const pockemonResponse: PokemonsResponse = await fetch(
