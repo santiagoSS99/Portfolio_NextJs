@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { usePathname } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
 
 const MaybeShowNavbar = ({ children }: DefaultInterface) => {
   const location = usePathname();
@@ -11,7 +11,7 @@ const MaybeShowNavbar = ({ children }: DefaultInterface) => {
   useEffect(() => {
     const dashboardRegex = /\/dashboard/i;
     const isDashboard = dashboardRegex.test(location);
-    console.log("isDashboard", isDashboard);
+    // console.log("isDashboard", isDashboard);
 
     setShowNavbar(!isDashboard);
   }, [location]);

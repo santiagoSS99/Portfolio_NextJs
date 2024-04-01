@@ -20,10 +20,10 @@ const menuItems = [
     subtitle: 'Counter',
   },
   {
-    path: '/dashboard/products',
+    path: '/dashboard/pokemons',
     icon: <IoCalculator size={40} />,
-    title: 'Products',
-    subtitle: 'Products',
+    title: 'Pokemons',
+    subtitle: 'Pokemons',
   },
   {
     path: '/dashboard/finance',
