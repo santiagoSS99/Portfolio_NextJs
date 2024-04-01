@@ -10,7 +10,7 @@ const Mainpage = () => {
       </section>
       <section>
         <div>
-          hola a mi otro amor
+          hola a mi otro amorperrrrr
         </div>
       </section>
     </article>

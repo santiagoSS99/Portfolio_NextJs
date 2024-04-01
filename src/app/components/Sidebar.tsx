@@ -1,41 +1,53 @@
-import Image from "next/image";
-import React from "react";
-import SideMenuItem from "./SideMenuItem";
-import Link from "next/link";
-import { IoBrowsersOutline, IoCalculator } from "react-icons/io5";
+import Image from 'next/image';
+import React from 'react';
+import SideMenuItem from './SideMenuItem';
+import Link from 'next/link';
+import { IoBrowsersOutline, IoCalculator } from 'react-icons/io5';
 
-const {logo} = require("../../../public/ssclogo.svg");
+const { logo } = require('../../../public/ssclogo.svg');
 
 const menuItems = [
   {
-    path: "/dashboard/main",
-    icon: <IoBrowsersOutline size={40}/>,
-    title: "Dashboard",
-    subtitle: "Main Page"
+    path: '/dashboard/main',
+    icon: <IoBrowsersOutline size={40} />,
+    title: 'Dashboard',
+    subtitle: 'Main Page',
   },
   {
-    path: "/dashboard/finance",
-    icon: <IoCalculator size={40}/>,
-    title: "Finance",
-    subtitle: "Ingresoss"
+    path: '/dashboard/counter',
+    icon: <IoCalculator size={40} />,
+    title: 'Counter',
+    subtitle: 'Counter',
   },
   {
-    path: "/dashboard/counter",
-    icon: <IoCalculator size={40}/>,
-    title: "Counter",
-    subtitle: "Counter"
+    path: '/dashboard/products',
+    icon: <IoCalculator size={40} />,
+    title: 'Products',
+    subtitle: 'Products',
   },
-]
+  {
+    path: '/dashboard/finance',
+    icon: <IoCalculator size={40} />,
+    title: 'Finance',
+    subtitle: 'Ingresoss',
+  },
+];
 
 export const Sidebar = () => {
   return (
     <div
       id="menu"
-      style={{ width: "300px" }}
-      className="backdrop-blur bg-softwhite shadow-xl rounded-3xl min-h-screen z-10 text-slate-300 w-64 left-0 h-screen"
+      style={{ width: '300px' }}
+      className="backdrop-blur bg-softwhite shadow-xl rounded-3xl min-h-screen z-10 text-slate-300 w-64 left-0"
     >
-      <Link href={"/dashboard/main"}>
-        <Image style={{padding:"0px", margin:"20px"}} src={logo} width={35} height={35} alt={""}></Image>
+      <Link href={'/dashboard/main'}>
+        <Image
+          style={{ padding: '0px', margin: '20px' }}
+          src={logo}
+          width={35}
+          height={35}
+          alt={''}
+        ></Image>
       </Link>
       <div id="profile" className="px-6 py-10">
         <p className="text-slate-500">Welcome back,</p>
@@ -49,18 +61,14 @@ export const Sidebar = () => {
               alt=""
             />
           </span>
-          <span className="text-sm md:text-base font-bold">
-            Santiago Sanchez
-          </span>
+          <span className="text-sm md:text-base font-bold">Santiago Sanchez</span>
         </a>
       </div>
 
       <div id="nav" className="w-full px-6">
-        {
-          menuItems.map(menuItem => (
-            <SideMenuItem key={menuItem.path} {...menuItem}/>
-          ))
-        }
+        {menuItems.map((menuItem) => (
+          <SideMenuItem key={menuItem.path} {...menuItem} />
+        ))}
       </div>
     </div>
   );
